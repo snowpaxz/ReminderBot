@@ -62,6 +62,9 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
+    if 'discord mod' == message.content.lower():
+        await message.channel.send("Not gonna be active on Discord tonight. I'm meeting a girl (a real one) in half an hour (wouldn't expect a lot of you to understand anyway) so please don't DM me asking me where I am (im with the girl, ok) you'll most likely get aired because ill be with the girl (again I don't expect you to understand) shes actually really interested in me and its not a situation i can pass up for some meaningless Discord degenerates (because ill be meeting a girl, not that you really are going to understand) this is my life now. Meeting women and not wasting my precious time online, I have to move on from such simple things and branch out (you wouldnt understand)")
+
     if '!' in message.content:
         if message.content == '!ping':
             await message.channel.send('!pong')
